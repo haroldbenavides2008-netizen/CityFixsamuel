@@ -1,0 +1,16 @@
+{
+  "name": "cityfixapp",
+  "version": "1.0.0",
+  "description": "Taller Práctico Avanzado CityFix",
+  "main": "src/utils/reportEngine.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

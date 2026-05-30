@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    container_name: cityfix_container
+    # Monta el código local y aisla node_modules interno
+    volumes:
+      - .:/app
+      - /app/node_modules
+    # Inyecta DNS públicos de Google para evitar bloqueos de red
+    dns:
+      - 8.8.8.8
+    # Mantiene el contenedor vivo para poder ejecutar comandos
+    tty: true
+    stdin_open: true
